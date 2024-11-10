@@ -4,13 +4,14 @@ import { Dispositivo } from '../../interfaces/dispositivo';  //Importo Dispositi
 import { CommonModule } from '@angular/common'; //Importo CommonModulo para el uso de ngfor
 import { DetalleDispositivoComponent } from '../detalle-dispositivo/detalle-dispositivo.component';  //importo el componente del detalles del dispotivos.
 import { ResaltarDirective } from '../../directives/resaltar.directive';
+import { ResumenTextoPipe } from '../../pipes/resumen-texto.pipe'; //Importo el pipeline
 
 
 
 @Component({
   selector: 'app-lista-dispositivos',
   standalone: true,
-  imports: [CommonModule, DetalleDispositivoComponent, ResaltarDirective], //Importo
+  imports: [CommonModule, DetalleDispositivoComponent, ResaltarDirective, ResumenTextoPipe], //Importo
   templateUrl: './lista-dispositivos.component.html',
   styleUrl: './lista-dispositivos.component.css'
 })

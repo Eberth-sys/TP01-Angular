@@ -1,7 +1,7 @@
 <p>Lista Dispositivos</p>
 <ul>
   <li *ngFor="let dispositivo of dispositivos" appResaltar>
-    <strong>{{ dispositivo.nombre }}</strong>: {{ dispositivo.descripcion }}
+    <strong>{{ dispositivo.nombre }}</strong>: {{ dispositivo.descripcion | resumenTexto }}
      <!-- Botón detalle -->
      <button (click)="seleccionarDispositivo(dispositivo)">Ver detalles</button>
   </li>
