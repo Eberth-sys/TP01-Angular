@@ -1,6 +1,11 @@
-<p>lista-dispositivos works!</p>
+<p>Lista Dispositivos</p>
 <ul>
   <li *ngFor="let dispositivo of dispositivos">
     <strong>{{ dispositivo.nombre }}</strong>: {{ dispositivo.descripcion }}
+     <!-- Botón detalle -->
+     <button (click)="seleccionarDispositivo(dispositivo)">Ver detalles</button>
   </li>
 </ul>
+
+<!-- Mostrardispotivo seleecionado  -->
+<app-detalle-dispositivo *ngIf="dispositivoSeleccionado" [dispositivo]="dispositivoSeleccionado"></app-detalle-dispositivo>
