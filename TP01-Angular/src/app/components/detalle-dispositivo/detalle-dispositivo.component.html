@@ -1,0 +1,8 @@
+<p>detalle-dispositivo works!</p>
+<div *ngIf="dispositivo">
+  <h3>Detalles del Dispositivo</h3>
+  <p><strong>Nombre:</strong> {{ dispositivo.nombre }}</p>
+  <p><strong>Descripción:</strong> {{ dispositivo.descripcion }}</p>
+  <p><strong>Fecha de Instalación:</strong> {{ dispositivo.fechaInstalacion | date }}</p>
+</div>
+
