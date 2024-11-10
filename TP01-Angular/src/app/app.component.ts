@@ -5,7 +5,7 @@ import { ListaDispositivosComponent } from './components/lista-dispositivos/list
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ListaDispositivosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
