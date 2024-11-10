@@ -32,4 +32,9 @@ export class ListaDispositivosComponent {
   seleccionarDispositivo(dispositivo: Dispositivo): void {
     this.dispositivoSeleccionado = dispositivo;
 }
+
+// Método para poder eliminar un dispositivo de la lista que se seleeciona. 
+eliminarDispositivo(dispositivo: Dispositivo): void {
+  this.dispositivos = this.dispositivos.filter(d => d !== dispositivo);
+}
 }

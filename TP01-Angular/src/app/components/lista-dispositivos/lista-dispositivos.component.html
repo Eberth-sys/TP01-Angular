@@ -2,8 +2,12 @@
 <ul>
   <li *ngFor="let dispositivo of dispositivos" appResaltar>
     <strong>{{ dispositivo.nombre }}</strong>: {{ dispositivo.descripcion | resumenTexto }}
-     <!-- Botón detalle -->
-     <button (click)="seleccionarDispositivo(dispositivo)">Ver detalles</button>
+    <div style="display: flex; justify-content: space-between;">
+      <!-- Botón detalle -->
+     <button style="margin-top: 8px; background-color: green; color: white;" (click)="seleccionarDispositivo(dispositivo)">Ver detalles</button>
+     <!-- Botón para eliminar el dispositivo que se seleeciona -->
+      <button style="margin-top: 8px; background-color: red; color: white;" (click)="eliminarDispositivo(dispositivo)">Eliminar</button>
+    </div>
   </li>
 </ul>
 
